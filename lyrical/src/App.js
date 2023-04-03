@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="https://yt3.googleusercontent.com/FkvaknHAWVtUQTqAPKWhJ0n-eAS795cuWbYGHbK04DImaRhEiU-49RPOLcl0Gb17EaGa4ICN=s900-c-k-c0x00ffffff-no-rj" className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit 
         </p>
         <a
           className="App-link"
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          check out my site
         </a>
       </header>
     </div>
