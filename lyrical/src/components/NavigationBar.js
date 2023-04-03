@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavigationBar.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 export default function NavigationBar() {
   const handleLogoClick = () => {
     window.location.reload();
@@ -10,9 +11,8 @@ export default function NavigationBar() {
     <nav className="navbar">
       <div className="navbar-logo" onClick={handleLogoClick}>Lyrical.ly</div>
       <div className="navbar-items">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+       <a href="#"> <FontAwesomeIcon icon={faBars} /></a>
+       
       </div>
     </nav>
   );
