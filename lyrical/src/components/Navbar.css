@@ -1,15 +1,24 @@
 * {
   margin: 0;
   
+<<<<<<< HEAD
   /* border: 1px solid red; */
+=======
+  /*border: 1px solid red;*/
+>>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f0f0f0;
+<<<<<<< HEAD
     padding: 20px 20px 0 40px;
     height: 5vh;
+=======
+
+    height: 10vh;
+>>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
     background-color: transparent;
   }
   
@@ -21,14 +30,21 @@
     padding: 1rem;
 
   }
+<<<<<<< HEAD
   
   .navbar-items a {
     margin-left: 20px;
+=======
+
+  .navbar-items a {
+    margin-left: 25px;
+>>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
     text-decoration: none;
     color: white;
     font-size: 2rem;
     margin-right: 1rem;
   }
+<<<<<<< HEAD
   
   .navbar-items a:hover {
     margin-left: 20px;
@@ -36,4 +52,25 @@
     color: white;
     
   }
+=======
+
+  .navbarMenu a{
+    font-size: medium;
+  }
+
+  .SpotifyBtn{
+    color: white;
+    border-radius: 30px;
+    border: none;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .MenuIcon{
+    margin-right: 10px;
+  }
+
+
+>>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
   

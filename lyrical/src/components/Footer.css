@@ -31,11 +31,12 @@
   .social-media-links a {
     color: white;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 3rem; 
     padding: 1rem;
   }
  
   .social-media-links li:nth-child(1n) a:hover {
+    
     color: #4769b3;
   }
   .social-media-links li:nth-child(2n) a:hover {
