@@ -27,7 +27,7 @@
    font-size: 1.2rem;
    border: none;
    border-radius: 5px;
-   background-color: black;
+   background-color: transparent;
    border-radius: 4px;
    font-size: 2rem;
    border: 1px solid white;
@@ -37,6 +37,9 @@
    transition: all 0.3s ease-out;
    position: relative;
    z-index: 1;
+   align-items: center;
+   justify-content: center;
+   display: flex;
  }
 
  .StartBtn:before {
@@ -64,3 +67,5 @@
   .Typewriter__cursor{
     color: transparent;
   }
+
+  

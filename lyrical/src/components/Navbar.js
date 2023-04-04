@@ -19,6 +19,8 @@ export default function Navbar() {
       <div className="navbar-logo" onClick={handleLogoClick}>Lyrical.ly</div>
       <div className="navbar-items">
 
+     <a className="MenuIcon" href="#" onClick={toggleMenu}>
+     <FontAwesomeIcon icon={faBars} /></a>
       {isMenuOpen && (
         <div className="navbarMenu">
             <a href="#">Who We Are</a>
@@ -27,13 +29,7 @@ export default function Navbar() {
             <a href="#">Terms of Use</a>
             <a href="#"><button className='SpotifyBtn'>Connect<FaSpotify/></button></a>
         </div>
-      )
-
-      }
-
-     <a href="#" onClick={toggleMenu}>
-     <FontAwesomeIcon icon={faBars} /></a>
-       
+      )} 
       </div>
     </nav>
   );

@@ -1,15 +1,15 @@
 * {
   margin: 0;
   
-  /* border: 1px solid red; */
+  /*border: 1px solid red;*/
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f0f0f0;
-    padding: 20px 20px 0 40px;
-    height: 5vh;
+
+    height: 10vh;
     background-color: transparent;
   }
   
@@ -21,19 +21,31 @@
     padding: 1rem;
 
   }
-  
+
   .navbar-items a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
     color: white;
     font-size: 2rem;
     margin-right: 1rem;
   }
-  
-  .navbar-items a:hover {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    
+
+  .navbarMenu a{
+    font-size: medium;
   }
+
+  .SpotifyBtn{
+    color: white;
+    border-radius: 30px;
+    border: none;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .MenuIcon{
+    margin-right: 10px;
+  }
+
+
   
