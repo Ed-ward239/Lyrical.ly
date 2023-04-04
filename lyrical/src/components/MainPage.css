@@ -19,9 +19,9 @@
     margin-bottom: 20px;
     color: white;
     margin-bottom: 9%;
+    
 
   }
-  
   .main-page-button {
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -35,11 +35,29 @@
     cursor: pointer;
     margin-bottom: 10%;
     transition: all 0.3s ease-out;
+    position: relative;
+    z-index: 1; 
   }
-
+  
+  .main-page-button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3a3636;
+    transition: width 0.3s ease-out;
+    z-index: -1; 
+  }
+  
+  .main-page-button:hover:before {
+    width: 100%;
+  }
   
   .main-page-button:hover {
     color: white;
     background-color: #6d6d6d5d;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   }
+  

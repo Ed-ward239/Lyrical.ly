@@ -21,7 +21,9 @@
     padding: 1rem;
 
   }
-  
+  .navbar-items {
+    display: flex;
+  }
   .navbar-items a {
     margin-left: 20px;
     text-decoration: none;
@@ -36,4 +38,3 @@
     color: white;
     
   }
-  
