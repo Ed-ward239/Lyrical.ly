@@ -13,49 +13,59 @@
     padding: 0 11%;
   }
   
-  .main-page-heading {
+  .SiteSlogan {
     font-size: 4rem;
     text-align: left;
-    margin-bottom: 20px;
+    margin-left: 0%;
+    margin-bottom: 11%;
     color: white;
-    margin-bottom: 9%;
-  }
-  .main-page-button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    background-color: black;
-    border-radius: 4px;
-    font-size: 2rem;
-    border: 1px solid white;
-    color: #fff;
-    cursor: pointer;
-    margin-bottom: 10%;
-    transition: all 0.3s ease-out;
-    position: relative;
-    z-index: 1; 
+    width: 55%;
   }
   
-  .main-page-button:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 100%;
-    background-color: #3a3636;
-    transition: width 0.3s ease-out;
-    z-index: -1; 
+ .StartBtn {
+   padding: 10px 20px;
+   font-size: 1.2rem;
+   border: none;
+   border-radius: 5px;
+   background-color: transparent;
+   border-radius: 4px;
+   font-size: 2rem;
+   border: 1px solid white;
+   color: #fff;
+   cursor: pointer;
+   margin-bottom: 45%;
+   transition: all 0.3s ease-out;
+   position: relative;
+   z-index: 1;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+ }
+
+ .StartBtn:before {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 0;
+   height: 100%;
+   background-color: white;
+   transition: width 0.6s ease-out;
+   z-index: -1;
+ }
+
+ .StartBtn:hover:before {
+   width: 100%;
+ }
+
+ .StartBtn:hover {
+   color: black;
+   background-color: white;
+   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+ }
+
+  .Typewriter__cursor{
+    color: transparent;
   }
-  
-  .main-page-button:hover:before {
-    width: 100%;
-  }
-  
-  .main-page-button:hover {
-    color: white;
-    background-color: #6d6d6d5d;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-  }
+
   

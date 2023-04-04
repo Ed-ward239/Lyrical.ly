@@ -1,14 +1,35 @@
 import React from 'react';
+import Typewriter from 'typewriter-effect';
+import {HiArrowRight} from 'react-icons/hi';
 import './MainPage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 export default function MainPage() {
+
+  var typewriter = new Typewriter(MainPage,{
+    loop: true,
+    delay: 1000,
+  });
+
   return (
-    
     <div className="main-page">
-      <h1 className="main-page-heading">Feel the rhythm <br></br>Embrace the beat...
-</h1>
-      <button className="main-page-button"><FontAwesomeIcon icon={faArrowRight} /> Let's get started</button>
+      <div className="SiteSlogan">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter.typeString("Feel the rhythm \nEmbrace the beat...")
+              .pauseFor(300)
+              .start();
+              Option={
+                autoStart: true,
+                loop: true,
+              }
+          }}
+        />
+      </div>
+      
+      <div>
+        <button className="StartBtn">Let's get started<HiArrowRight /></button>
+      </div>
     </div>
+    
   );
 }

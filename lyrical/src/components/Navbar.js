@@ -20,6 +20,11 @@ export default function Navbar() {
       <div className="navbar-items">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     <a className="MenuIcon" href="#" onClick={toggleMenu}>
+     <FontAwesomeIcon icon={faBars} /></a>
+>>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
 =======
      <a className="MenuIcon" href="#" onClick={toggleMenu}>
      <FontAwesomeIcon icon={faBars} /></a>
@@ -33,6 +38,7 @@ export default function Navbar() {
             <a href="#"><button className='SpotifyBtn'>Connect<FaSpotify/></button></a>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
       )
 
       }
@@ -40,6 +46,9 @@ export default function Navbar() {
      <a href="#" onClick={toggleMenu}>
      <FontAwesomeIcon icon={faBars} /></a>
        
+=======
+      )} 
+>>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
 =======
       )} 
 >>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
