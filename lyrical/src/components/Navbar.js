@@ -19,39 +19,18 @@ export default function Navbar() {
       <div className="navbar-logo" onClick={handleLogoClick}>Lyrical.ly</div>
       <div className="navbar-items">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     <a className="MenuIcon" href="#" onClick={toggleMenu}>
-     <FontAwesomeIcon icon={faBars} /></a>
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
-=======
-     <a className="MenuIcon" href="#" onClick={toggleMenu}>
-     <FontAwesomeIcon icon={faBars} /></a>
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
+   
       {isMenuOpen && (
         <div className="navbarMenu">
             <a href="#">Who We Are</a>
             <a href="#">Guide</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
-            <a href="#"><button className='SpotifyBtn'>Connect<FaSpotify/></button></a>
+            <button className='SpotifyBtn'>Connect<FaSpotify className='spotify-icon'/></button>
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      )
-
-      }
-
-     <a href="#" onClick={toggleMenu}>
-     <FontAwesomeIcon icon={faBars} /></a>
-       
-=======
       )} 
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
-=======
-      )} 
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
+        <a className="MenuIcon" href="#" onClick={toggleMenu}>
+        <FontAwesomeIcon icon={faBars} /></a>
       </div>
     </nav>
   );

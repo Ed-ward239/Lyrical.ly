@@ -1,33 +1,15 @@
 * {
   margin: 0;
-  
-<<<<<<< HEAD
-<<<<<<< HEAD
   /* border: 1px solid red; */
-=======
-  /*border: 1px solid red;*/
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
-=======
-  /*border: 1px solid red;*/
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
+
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f0f0f0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    padding: 20px 20px 0 40px;
-    height: 5vh;
-=======
 
     height: 10vh;
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
-=======
-
-    height: 10vh;
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
     background-color: transparent;
   }
   
@@ -36,62 +18,57 @@
     color: white;
     cursor: pointer;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 3rem;
 
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  
-  .navbar-items a {
-    margin-left: 20px;
-=======
-
-  .navbar-items a {
-    margin-left: 25px;
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
-=======
-
-  .navbar-items a {
-    margin-left: 25px;
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    margin-right: 1rem;
-  }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  
-  .navbar-items a:hover {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    
-  }
-=======
-=======
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
-
-  .navbarMenu a{
-    font-size: medium;
-  }
-
-  .SpotifyBtn{
-    color: white;
-    border-radius: 30px;
-    border: none;
+  .navbar-items {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+  .navbar-items a {
+  
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.486);
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+  .navbar-items a:hover{
+    color: white;
+  }
+  .navbarMenu {
     display: flex;
   }
+  .navbarMenu a{
+    font-size: medium;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .SpotifyBtn {
+    background-color: #1db954;
 
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+    margin-right: 2rem;
+  }
+ 
+  .SpotifyBtn:hover{
+    color: white;
+  }
+ 
   .MenuIcon{
     margin-right: 10px;
+
   }
 
 
-<<<<<<< HEAD
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
-=======
->>>>>>> be4ce0db5bdee4935cafdfde5ecefb1806f96fb2
   

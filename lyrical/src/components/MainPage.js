@@ -27,7 +27,7 @@ export default function MainPage() {
       </div>
       
       <div>
-        <button className="StartBtn">Let's get started<HiArrowRight /></button>
+        <button className="StartBtn">Let's get started<HiArrowRight className='hiarrow'/></button>
       </div>
     </div>
     

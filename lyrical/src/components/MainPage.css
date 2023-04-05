@@ -4,6 +4,9 @@
     margin: 0;
     background-color: transparent;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .main-page {
     display: flex;
@@ -23,7 +26,7 @@
   }
   
  .StartBtn {
-   padding: 10px 20px;
+   padding: 5px 30px;
    font-size: 1.2rem;
    border: none;
    border-radius: 5px;
@@ -34,14 +37,17 @@
    color: #fff;
    cursor: pointer;
    margin-bottom: 45%;
-   transition: all 0.3s ease-out;
+   transition: all 0.2s ease-out;
    position: relative;
    z-index: 1;
    align-items: center;
    justify-content: center;
    display: flex;
- }
 
+ }
+ .hiarrow{
+  padding: 1rem;
+ }
  .StartBtn:before {
    content: '';
    position: absolute;
@@ -49,8 +55,8 @@
    bottom: 0;
    width: 0;
    height: 100%;
-   background-color: white;
-   transition: width 0.6s ease-out;
+   background-color: rgba(255, 255, 255, 0.486);
+   transition: width 0.5s ease-out;
    z-index: -1;
  }
 
@@ -60,8 +66,8 @@
 
  .StartBtn:hover {
    color: black;
-   background-color: white;
-   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+   background-color:  rgba(255, 255, 255, 0.486);
+  
  }
 
   .Typewriter__cursor{
