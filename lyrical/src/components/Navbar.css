@@ -39,7 +39,8 @@
     color: white;
   }
   .navbarMenu {
-    display: flex;
+   display: flex;
+    transition: all 1s ease-out;
   }
   .navbarMenu a{
     font-size: medium;
@@ -63,6 +64,7 @@
  
   .SpotifyBtn:hover{
     color: white;
+    transform: scale(1.1);
   }
  
   .MenuIcon{
@@ -71,6 +73,7 @@
   }
   .spotify-icon{
     margin: 2% 0% 0% 0.5rem;
+    
   }
 
   
