@@ -9,7 +9,7 @@
     align-items: center;
     background-color: #f0f0f0;
 
-    height: 10vh;
+    height: 8vh;
     background-color: transparent;
   }
   
@@ -29,7 +29,7 @@
 }
 
   .navbar-items a {
-  
+    
     text-decoration: none;
     color:rgba(255, 255, 255, 0.486);
     font-size: 2rem;
@@ -47,8 +47,8 @@
     text-align: center;
   }
   .SpotifyBtn {
+    
     background-color: #1db954;
-
     color: white;
     border: none;
     border-radius: 1rem;
@@ -56,7 +56,7 @@
     font-size: 1rem;
     cursor: pointer;
     display: flex;
-
+    justify-content: center;
     align-items: center;
     margin-right: 2rem;
   }
@@ -69,6 +69,8 @@
     margin-right: 10px;
 
   }
-
+  .spotify-icon{
+    margin: 2% 0% 0% 0.5rem;
+  }
 
   

@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import './Navbar.css';
 import { FaSpotify } from 'react-icons/fa'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Hamburger from 'hamburger-react'
 
 export default function Navbar() {
   const handleLogoClick = () => {
@@ -13,7 +14,7 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const [isOpen, setOpen] = useState(false)
   return (
     <nav className="navbar">
       <div className="navbar-logo" onClick={handleLogoClick}>Lyrical.ly</div>
@@ -29,8 +30,10 @@ export default function Navbar() {
             <button className='SpotifyBtn'>Connect<FaSpotify className='spotify-icon'/></button>
         </div>
       )} 
-        <a className="MenuIcon" href="#" onClick={toggleMenu}>
-        <FontAwesomeIcon icon={faBars} /></a>
+      
+        
+        <a  href="#" onClick={toggleMenu}>
+        <Hamburger toggled={isOpen} toggle={setOpen} /></a>
       </div>
     </nav>
   );
