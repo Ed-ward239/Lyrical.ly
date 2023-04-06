@@ -5,25 +5,35 @@ import './MainPage.css';
 
 export default function MainPage() {
 
-  var typewriter = new Typewriter(MainPage,{
-    loop: true,
-    delay: 1000,
-  });
+// this is for javascript, not suitable to react
+
+  // var typewriter = new Typewriter(MainPage,{
+  //   delay: 1,
+  // });
 
   return (
     <div className="main-page">
       <div className="SiteSlogan">
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter.typeString("Feel the rhythm \nEmbrace the beat...")
-              .pauseFor(300)
-              .start();
-              Option={
-                autoStart: true,
-                loop: true,
-              }
-          }}
-        />
+      <Typewriter
+        options={{
+          delay: 75,
+          loop:false,
+        }}
+
+        onInit={(typewriter) => {
+          typewriter
+            .typeString("Feel the rhythm")
+            .pauseFor(300)
+            .typeString('\n<span style="color: #27ae60;">Embrace</span> the beat')
+            .callFunction(() => {
+              const cursor = document.querySelector('.Typewriter__cursor');
+              cursor.style.color = "transparent";
+            })
+            
+            .start();
+        }}
+        
+      />
       </div>
       
       <div>

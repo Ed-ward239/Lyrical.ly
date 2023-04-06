@@ -3,6 +3,7 @@
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     background-color: transparent;
+    /* border: 1px solid red; */
 }
 body::-webkit-scrollbar {
   display: none;
@@ -13,10 +14,11 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     align-items: flex-end;
     height: 78vh;
-    padding: 0 11%;
+    padding: 0 18%;
   }
   
   .SiteSlogan {
+
     font-size: 4rem;
     text-align: left;
     margin-left: 0%;
@@ -70,8 +72,8 @@ body::-webkit-scrollbar {
   
  }
 
-  .Typewriter__cursor{
-    color: transparent;
-  }
+  /* .Typewriter__cursor{
+    color: blue;
+  } */
 
   
