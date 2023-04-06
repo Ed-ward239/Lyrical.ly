@@ -13,8 +13,11 @@ export default function MainPage() {
 
   return (
     <div className="main-page">
+      
       <div className="SiteSlogan">
+      
       <Typewriter
+
         options={{
           delay: 75,
           loop:false,
@@ -24,7 +27,7 @@ export default function MainPage() {
           typewriter
             .typeString("Feel the rhythm")
             .pauseFor(300)
-            .typeString('\n<span style="color: #27ae60;">Embrace</span> the beat')
+            .typeString('\n<span style="color: #52B2BF;">Embrace</span> the beat')
             .callFunction(() => {
               const cursor = document.querySelector('.Typewriter__cursor');
               cursor.style.color = "transparent";
@@ -34,6 +37,7 @@ export default function MainPage() {
         }}
         
       />
+    
       </div>
       
       <div>

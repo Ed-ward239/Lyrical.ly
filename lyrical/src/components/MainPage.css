@@ -10,10 +10,11 @@ body::-webkit-scrollbar {
 }
 
 .main-page {
+   margin-top: 25%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 78vh;
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+    height: 27vh;
     padding: 0 18%;
   }
   
@@ -23,11 +24,13 @@ body::-webkit-scrollbar {
     text-align: left;
     margin-left: 0%;
     margin-bottom: 11%;
+    margin-right: 7%;
     color: white;
     width: 55%;
   }
   
  .StartBtn {
+   margin-top: 5.4rem;
    padding: 5px 30px;
    font-size: 1.2rem;
    border: none;
@@ -38,7 +41,6 @@ body::-webkit-scrollbar {
    border: 1px solid white;
    color: #fff;
    cursor: pointer;
-   margin-bottom: 45%;
    transition: all 0.2s ease-out;
    position: relative;
    z-index: 1;
@@ -71,7 +73,23 @@ body::-webkit-scrollbar {
    background-color:  rgba(255, 255, 255, 0.486);
   
  }
-
+ @media screen and (max-width: 400px) {
+    .main-page {
+      display: flex;
+      flex-direction: column;
+      width: 64%;
+      height: 64vh;
+    }
+    .SiteSlogan {
+    font-size: 2rem;
+    width: 100%;
+    }
+    .StartBtn {
+      font-size: 0.7rem;
+      margin: 0;
+      
+    }
+ }
   /* .Typewriter__cursor{
     color: blue;
   } */

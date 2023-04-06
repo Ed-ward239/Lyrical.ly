@@ -76,3 +76,16 @@
     transform: scale(1.2);
     transition: 0.5s all ease-in-out;
   }
+  @media screen and (max-width: 400px) {
+    .social-media-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+      padding: 0.5rem;
+    }
+    .footer {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+ }
