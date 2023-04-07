@@ -4,11 +4,16 @@ import { FaSpotify } from "react-icons/fa";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Hamburger from "hamburger-react";
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
-  const handleLogoClick = () => {
-    window.location.reload();
-  };
+  const navigate = useNavigate();
+
+  function handleClick(event) {
+    event.preventDefault();
+    navigate('/');
+  }
+ 
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -17,7 +22,7 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
   return (
     <nav className="navbar">
-      <div className="navbar-logo" onClick={handleLogoClick}>
+      <div className="navbar-logo" onClick={handleClick}>
         Lyrical.ly
       </div>
       <div className="navbar-items">

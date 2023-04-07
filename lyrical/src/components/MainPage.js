@@ -2,20 +2,22 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import {HiArrowRight} from 'react-icons/hi';
 import './MainPage.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function MainPage() {
+  const navigate = useNavigate();
 
-// this is for javascript, not suitable to react
-
-  // var typewriter = new Typewriter(MainPage,{
-  //   delay: 1,
-  // });
+  function handleClick(event) {
+    event.preventDefault();
+    navigate('/SearchPage');
+  }
 
   return (
+    
     <div className="main-page">
       
       <div className="SiteSlogan">
-      
+  
       <Typewriter
 
         options={{
@@ -41,7 +43,7 @@ export default function MainPage() {
       </div>
       
       <div>
-        <button className="StartBtn">Let's get started<HiArrowRight className='hiarrow'/></button>
+        <button className="StartBtn" onClick={handleClick}>Let's get started<HiArrowRight className='hiarrow'/></button>
       </div>
     </div>
     
