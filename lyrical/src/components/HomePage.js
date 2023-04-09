@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from "react-router-dom";
 import MainPage from './MainPage';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -9,6 +10,7 @@ function Home() {
         <>
             <Particle />
             <Navbar />
+            <Outlet/>
             <MainPage />
             <Footer />
         </>
