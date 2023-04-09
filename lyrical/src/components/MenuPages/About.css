@@ -1,0 +1,37 @@
+.div{
+    background-color: transparent;
+}
+
+.pfpEdward{
+    border-radius: 30%;
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+.pfpDevin{
+    border-radius: 30%;
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+.h2{
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
