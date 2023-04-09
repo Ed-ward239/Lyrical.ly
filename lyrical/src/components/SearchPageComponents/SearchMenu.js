@@ -17,6 +17,7 @@ export default function SearchMenu() {
   const placeholder = 'Search: songs, artists, or albums';
   return (
     <div className="searchContainer">
+
       <input className="searchBox"
         type="text"
         placeholder={placeholder}
