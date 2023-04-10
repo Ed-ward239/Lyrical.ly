@@ -26,13 +26,15 @@
     flex-direction: row;
     align-items: center;
     margin-right: 30px;
-}
+  }
 
   .navbar-items li {
-    
+    font-size: medium;
+    padding: 5px 10px;
+    text-align: center;
+    list-style-type:none;   
     text-decoration: none;
     color:rgba(255, 255, 255, 0.486);
-    font-size: 2rem;
     margin-right: 2rem;
   }
   .navbar-items a:hover{
@@ -40,31 +42,36 @@
   }
 
   .navbarMenu {
-    display: flex;
-    position: absolute;
-    right: 3%;
-    background-color: transparent;
-    width: 800px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
     transform: translateX(90px);
    
   }
-  
+  .navbarMenu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 3%;
+    background-color: transparent;
+    width: 800px;
+   
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-items li:hover{
+    color: white;
+    cursor: pointer;
+  }
+
   .navbarMenu.show {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
   }
-  .navbarMenu a{
-    font-size: medium;
-    padding: 5px 10px;
-    text-align: center;
-  }
+
   .SpotifyBtn {
     
     background-color: #1db954;
@@ -77,7 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
  
   .SpotifyBtn:hover{
@@ -120,6 +127,7 @@
     transform: translateY(-50%);
    
   }
+
   
   .navbarMenu.show {
     opacity: 1;

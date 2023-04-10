@@ -1,13 +1,13 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import {HiArrowRight} from 'react-icons/hi';
-import './MainPage.css';
+import './MainBody.css';
 
-export default function MainPage() {
+export default function MainBody() {
 
 // this is for javascript, not suitable to react
 
-  // var typewriter = new Typewriter(MainPage,{
+  // var typewriter = new Typewriter(MainBody,{
   //   delay: 1,
   // });
 

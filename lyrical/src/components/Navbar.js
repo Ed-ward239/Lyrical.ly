@@ -5,12 +5,19 @@ import { FaSpotify } from "react-icons/fa";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Hamburger from "hamburger-react";
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
-  // Logo Home button
-  const handleLogoClick = () => {
-    window.location.reload();
-  };
+  const navigate = useNavigate();
+ // Menu Navigation functions
+  function handleLogoClick(event) {
+    event.preventDefault();
+    navigate('/');
+  }
+  function clickAbout(event) {
+    event.preventDefault();
+    navigate('/About');
+  }
 
   // Menu toggle function
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +39,7 @@ export default function Navbar() {
 
         <div className={`navbarMenu ${isMenuOpen ? "show" : ""}`}>
           <ul>
-            <li href="#"><Link to="/About">Who We Are</Link></li>
+            <li href="#" onClick={clickAbout}>Who We Are</li>
             <li href="#">Guide</li>
             <li href="#">Privacy Policy</li>
             <li href="#">Terms of Use</li>
