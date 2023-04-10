@@ -1,37 +1,58 @@
-.div{
-    background-color: transparent;
-}
+* {
+    margin: 0;
+    /* border: 1px solid red; */
+  
+  }
 
 .pfpEdward{
-    border-radius: 30%;
-    opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
-    will-change: opacity, transform, visibility;
-    opacity: 1;
-    transform: none;
-    visibility: visible;
+    max-height: 20vh;
+    border-radius: 20px;
+    margin: 0.5rem;
 }
 .pfpDevin{
-    border-radius: 30%;
-    opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
-    will-change: opacity, transform, visibility;
-    opacity: 1;
-    transform: none;
-    visibility: visible;
+    max-height: 20vh;
+    border-radius: 20px;
+    margin: 0.5rem;
 }
+.whoweare {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1, h3, h2 {
+    color:white;
+}
+.about-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ProfilePictures {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ 
+}
+.ProfilePictures div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8%;
 
-.h2{
-    opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
-    will-change: opacity, transform, visibility;
-    opacity: 1;
-    transform: none;
-    visibility: visible;
+  
+}
+.about-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pfp-description {
+    margin: 2%;
+    text-align: center;
+    color: white;
 }

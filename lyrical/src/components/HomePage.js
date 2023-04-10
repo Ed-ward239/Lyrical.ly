@@ -1,5 +1,6 @@
 import React from 'react';
-import MainBody from './MainBody';
+import { Outlet } from "react-router-dom";
+import MainPage from './MainBody';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Particle from './Particle';
@@ -9,7 +10,8 @@ function Home() {
         <>
             <Particle />
             <Navbar />
-            <MainBody />
+            <Outlet/>
+            <MainPage />
             <Footer />
         </>
     )
