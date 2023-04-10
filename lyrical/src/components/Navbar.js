@@ -9,20 +9,24 @@ import { useNavigate } from 'react-router-dom';
 export default function Navbar() {
   const navigate = useNavigate();
 
-  function handleClick(event) {
+  function clickLogo(event) {
     event.preventDefault();
     navigate('/');
   }
- 
-
+  function clickAbout(event) {
+    event.preventDefault();
+    navigate('/About');
+  }
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const [isOpen, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <div className="navbar-logo" onClick={handleClick}>
+      <div className="navbar-logo" onClick={clickLogo}>
         Lyrical.ly
       </div>
       <div className="navbar-items">
@@ -31,7 +35,7 @@ export default function Navbar() {
       <div className="navbarMenu"></div>
 
         <div className={`navbarMenu ${isMenuOpen ? "show" : ""}`}>
-          <a href="#">Who We Are</a>
+          <a href="#" onClick={clickAbout}>Who We Are</a>
           <a href="#">Guide</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Use</a>

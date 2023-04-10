@@ -1,10 +1,10 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import {HiArrowRight} from 'react-icons/hi';
-import './MainPage.css';
+import './MainBody.css';
 import { useNavigate } from 'react-router-dom';
 
-export default function MainPage() {
+export default function MainBody() {
   const navigate = useNavigate();
 
   function handleClick(event) {
