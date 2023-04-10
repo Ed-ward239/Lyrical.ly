@@ -1,8 +1,5 @@
 import React from 'react';
-
-
 import { Routes, Route } from 'react-router-dom';
-
 import Home from './components/HomePage';
 import About from './components/MenuPages/About';
 import Guide from './components/MenuPages/Guide';
