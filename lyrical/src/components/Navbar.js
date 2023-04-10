@@ -18,6 +18,18 @@ export default function Navbar() {
     event.preventDefault();
     navigate('/About');
   }
+  function clickGuide(event) {
+    event.preventDefault();
+    navigate('/Guide');
+  }
+  function clickPrivacy(event) {
+    event.preventDefault();
+    navigate('/Privacy');
+  }
+  function clickTnS(event) {
+    event.preventDefault();
+    navigate('/Tns');
+  }
 
   // Menu toggle function
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,9 +52,9 @@ export default function Navbar() {
         <div className={`navbarMenu ${isMenuOpen ? "show" : ""}`}>
           <ul>
             <li href="#" onClick={clickAbout}>Who We Are</li>
-            <li href="#">Guide</li>
-            <li href="#">Privacy Policy</li>
-            <li href="#">Terms of Use</li>
+            <li href="#" onClick={clickGuide}>Guide</li>
+            <li href="#" onClick={clickPrivacy}>Privacy Policy</li>
+            <li href="#" onClick={clickTnS}>Terms of Use</li>
             <li><button className="SpotifyBtn">
               Connect
               <FaSpotify className="spotify-icon" />
