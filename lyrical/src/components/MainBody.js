@@ -2,6 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import {HiArrowRight} from 'react-icons/hi';
 import './MainBody.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function MainBody() {
 
@@ -10,7 +11,12 @@ export default function MainBody() {
   // var typewriter = new Typewriter(MainBody,{
   //   delay: 1,
   // });
+  const navigate = useNavigate();
 
+  function SearchClick(event) {
+    event.preventDefault();
+    navigate('/SearchPage');
+  }
   return (
     <div className="main-page">
       
@@ -41,7 +47,7 @@ export default function MainBody() {
       </div>
       
       <div>
-        <button className="StartBtn">Let's get started<HiArrowRight className='hiarrow'/></button>
+        <button className="StartBtn" onClick={SearchClick}>Let's get started<HiArrowRight className='hiarrow'/></button>
       </div>
     </div>
     

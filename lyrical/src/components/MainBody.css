@@ -47,8 +47,8 @@ body::-webkit-scrollbar {
    align-items: center;
    justify-content: center;
    display: flex;
-
  }
+ 
  .hiarrow{
   padding: 1rem;
  }

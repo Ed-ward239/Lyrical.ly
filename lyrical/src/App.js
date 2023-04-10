@@ -9,7 +9,7 @@ import Guide from './components/MenuPages/Guide';
 import Privacy from './components/MenuPages/Privacy';
 import TnS from './components/MenuPages/TnS';
 import CntSpotify from './components/MenuPages/connectSpotify';
-
+import SearchPage from './components/SearchPageComponents/SearchPage';
 
 function App() {
  
@@ -22,6 +22,7 @@ function App() {
             <Route path="/Privacy" element={<Privacy/>}/>
             <Route path="/TnS" element={<TnS/>}/>
             <Route path="/connectSpotify" element={<CntSpotify/>}/>
+            <Route path="/SearchPage" element={<SearchPage />} />
         </Routes>
       </div>
        
