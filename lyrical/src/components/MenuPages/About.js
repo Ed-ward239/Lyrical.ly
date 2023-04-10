@@ -2,9 +2,9 @@ import React from 'react';
 import Particle from '../Particle';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import Edward from '../Images/Edward';
-import Devin from '../Images/Devin';
-import About from './About.css';
+import Edward from '../Images/Edward.jpeg';
+import Devin from '../Images/Devin.png';
+import './About.css';
 
 function About() {
     return (
