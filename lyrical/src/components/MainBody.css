@@ -90,8 +90,8 @@ body::-webkit-scrollbar {
       
     }
  }
-  /* .Typewriter__cursor{
-    color: blue;
-  } */
+  .Typewriter__cursor{
+    color: transparent;
+  }
 
   

@@ -26,7 +26,7 @@ export default function MainBody() {
 
         options={{
           delay: 75,
-          loop:false,
+          loop: true,
         }}
 
         onInit={(typewriter) => {
@@ -34,6 +34,7 @@ export default function MainBody() {
             .typeString("Feel the rhythm")
             .pauseFor(300)
             .typeString('\n<span style="color: #52B2BF;">Embrace</span> the beat')
+            .pauseFor(3000)
             .callFunction(() => {
               const cursor = document.querySelector('.Typewriter__cursor');
               cursor.style.color = "transparent";
