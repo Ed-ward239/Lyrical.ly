@@ -30,6 +30,10 @@ export default function Navbar() {
     event.preventDefault();
     navigate('/Tns');
   }
+  function clickSpotify(event) {
+    event.preventDefault();
+    navigate('/connectSpotify');
+  }
 
   // Menu toggle function
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +50,7 @@ export default function Navbar() {
       </div>
       <div className="navbar-items">
 
-      /* you can add CSS transition properties to the navbarMenu */
+      
       <div className="navbarMenu"></div>
 
         <div className={`navbarMenu ${isMenuOpen ? "show" : ""}`}>
@@ -55,7 +59,7 @@ export default function Navbar() {
             <li href="#" onClick={clickGuide}>Guide</li>
             <li href="#" onClick={clickPrivacy}>Privacy Policy</li>
             <li href="#" onClick={clickTnS}>Terms of Use</li>
-            <li><button className="SpotifyBtn">
+            <li><button className="SpotifyBtn" onClick={clickSpotify}>
               Connect
               <FaSpotify className="spotify-icon" />
             </button></li>

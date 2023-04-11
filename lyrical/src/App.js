@@ -11,10 +11,13 @@ import TnS from './components/MenuPages/TnS';
 import CntSpotify from './components/MenuPages/connectSpotify';
 import SearchPage from './components/SearchPageComponents/SearchPage';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Dashboard from './Dashboard';
+const code = new URLSearchParams(window.location.search).get('code')
 function App() {
  
     return (
-      <div className="App">
+      code ? <Dashboard code = {code}/> : <div className="App">
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About/>}/>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./SearchMenu.css";
 import { FaSpotify } from "react-icons/fa";
 
+
 export default function SearchMenu() {
   
   const [searchQuery, setSearchQuery] = useState("");
@@ -17,7 +18,7 @@ export default function SearchMenu() {
   const placeholder = 'Search: songs, artists, or albums';
   return (
     <div className="searchContainer">
-
+      
       <input className="searchBox"
         type="text"
         placeholder={placeholder}
