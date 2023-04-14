@@ -13,6 +13,7 @@
     "axios": "^1.3.5",
     "bootstrap": "^5.2.3",
     "burger-react": "^0.0.1-b",
+    "curl": "^0.1.4",
     "fa-icons": "^0.2.0",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
